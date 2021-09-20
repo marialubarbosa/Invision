@@ -1,0 +1,30 @@
+  <div>
+    <h6>Wellcome to Invision</h6>
+  </div>
+  <form >
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="email" #email class="validate" autocomplete="off" required>
+        <label for="email">Email</label>
+        <span class="helper-text" data-error="O email está  incorreto, por favor insira um email válido!"></span>
+      </div>
+      <div class="input-field col s12">
+        <input id="password" type="password" #password class="validate" autocomplete="off" required>
+        <label for="password">Password</label>
+      </div>
+      <div class="right-align">
+        <button type="button" class="btn-flat forgot-password " (click)="goToForgotPassword()">Forgot password?</button>
+      </div>
+    </div>
+    <div class="sign-in">
+      <button type="button" class=" btn-small" (click)="signIn(email.value, password.value)">Sign in</button>
+    </div>
+  </form>
+  <div class="separator"><hr><span>Or</span><hr></div>
+  <div class="sign-in-google">
+    <button class=" btn-small" type="button" (click)="authService.GoogleAuth()"><img src="../../../../../assets/google.svg">Sing in with Google</button>
+  </div>
+  <div class="redirect-button">
+    <p>New Invision? </p>
+    <button class="btn-flat" (click)="goToPage()">Create Account</button>
+  </div>

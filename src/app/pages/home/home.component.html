@@ -1,0 +1,20 @@
+<div>
+  <h3 class="title-home ">Invision</h3>
+  <div class="row home-section">
+    <div class="col s12 m12 l6 valign-wrapper home-section__link carousel-login carousel-login" >
+      <app-carousel-link></app-carousel-link>
+    </div>
+    <div class="col s12 m12 l6 home-section__link valign-wrapper forms">
+        <div *ngIf="loginBoolean; then login; else register"></div>
+    </div>
+  </div>
+
+</div>
+
+<ng-template #login>
+  <app-login></app-login>
+</ng-template>
+
+<ng-template  #register>
+  <app-register></app-register>
+</ng-template>

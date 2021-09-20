@@ -1,0 +1,111 @@
+@import '../../styles/variables.scss';
+
+.user-space{
+  background-color: $color-primary;
+}
+
+.user-space-content{
+  // padding: 5%;
+  text-align: center;
+  padding: 29%;
+  img{
+    width: 55%;
+  }
+
+}
+
+.user-space-text{
+  margin: 3% auto;
+  p{
+    color: #000000;
+    font-family: "Montserrat";
+    opacity: 50%;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+.log-out{
+  text-align-last: center;
+  button{
+    color: $color-secondary-darker;
+    border-radius: 100px;
+    background-color: $color-ligther;
+    opacity: 100%;
+    text-transform: none;
+    width: 175px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 915px){
+  .user-space-content{
+    padding: 10%;
+    text-align: center;
+    img{
+      width: 80%;
+    }
+
+  }
+
+  .user-space-text{
+    margin: 6% auto;
+    p{
+      color: #000000;
+      font-family: "Montserrat";
+      opacity: 50%;
+      font-size: 18px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 860px){
+  .user-space-content{
+    padding: 20% 5%;
+    text-align: center;
+    img{
+      width: 100%;
+    }
+
+  }
+
+  .user-space-text{
+    margin: 6% auto;
+    p{
+      color: #000000;
+      font-family: "Montserrat";
+      opacity: 50%;
+      font-size: 18px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 560px){
+  .user-space-content{
+    padding: 25% 5%;
+    text-align: center;
+    img{
+      width: 100%;
+    }
+
+  }
+
+  .user-space-text{
+    margin: 6% auto;
+    p{
+      color: #000000;
+      font-family: "Montserrat";
+      opacity: 50%;
+      font-size: 18px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+}

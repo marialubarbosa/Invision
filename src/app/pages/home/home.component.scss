@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+
+.home-section {
+  height: 100vh;
+}
+.home-section__link {
+  height: 100%;
+}
+
+.title-home {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  letter-spacing: -2px;
+  font-weight: bold;
+  font-size: 35px;
+
+}
+
+.forms{
+  justify-content: center;
+}
+
+.carousel-login{
+  background-color: $color-primary;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 992px){
+
+  .carousel-login{
+    display: flex;
+  }
+  .title-home{
+    color: $color-ligther;
+    opacity: 100%;
+    right: 13%;
+  }
+
+  @media (max-width: 641px){
+
+    .carousel-login{
+      display: none;
+    }
+
+    .title-home{
+      color: $color-secondary-darker;
+      right: 9%;
+      top: 2%;
+    }
+  }
+}
+
+

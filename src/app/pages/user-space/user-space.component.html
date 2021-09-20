@@ -1,0 +1,14 @@
+<div class="user">
+  <div class="user-space">
+    <div class="user-space-content">
+      <img src="../../../assets/img_carousel.png" alt="Invision">
+      <div class="user-space-text" *ngIf="authService.userData as user">
+        <p> Hello {{user.email || ", it looks like there was an error logging in, please try again later!" }}!</p>
+        <h6>Thanks for access Invision!</h6>
+      </div>
+      <div class="log-out">
+        <button type="button" class=" btn-small" (click)="authService.SingOut()" >Log out</button>
+      </div>
+    </div>
+  </div>
+</div>

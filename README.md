@@ -1,27 +1,30 @@
-# Invision3
+# Invision
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.
+Invision is an access management system, we can log in and register an user wiht or whitout a google account. Some features are password reset and logout  with your Google account.
 
-## Development server
+This project was generated with Angular CLI and with an Angular Fire2 authentication api.To have access clone this repository, and run the following commands:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ *Install the dependency:
+ ~~~javascript
+  npm install 
+  ~~~
+  
+  *Install Angular Fire2:
+  ~~~javascript
+  npm install firebase @angular/fire --save
+  ~~~ 
+  
+  *Start Project:
+  ~~~javascript
+  ng serve
+  ~~~
 
-## Code scaffolding
+### Future implementations:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Screens for all password reset process;
 
-## Build
+* Authentication with Facebook;
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Management users permission;
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

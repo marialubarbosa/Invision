@@ -1,0 +1,39 @@
+<div class="forms">
+  <div>
+    <h6>Getting Started</h6>
+  </div>
+  <form >
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="text" #name class="validate" required>
+        <label for="email">Full name</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="email" type="email" #email class="validate" required>
+        <label for="email">Email</label>
+        <span class="helper-text" data-error="O email está  incorreto, por favor insira um email válido!"></span>
+      </div>
+      <div class="input-field col s12">
+        <input id="password" type="password" #password class="validate" minlength="6" required>
+        <label for="password">Password</label>
+        <span class="helper-text" data-error="A senha precisa ter no mínimo seis caracteres!" ></span>
+      </div>
+    </div>
+    <div class="sign-in">
+      <button type="button" class=" btn-small" (click)="signUp(email.value, password.value)">Sign up</button>
+    </div>
+
+  </form>
+
+  <div class="separator"><hr><span>Or</span><hr></div>
+
+  <div class="sign-in-google">
+    <button class=" btn-small" type="button" (click)="authService.GoogleAuth()"><img src="../../../../../assets/google.svg">Sing up with Google</button>
+  </div>
+
+  <div class="redirect-button">
+    <p>Already on Invision? </p>
+    <button class="btn-flat" (click)="goToPage()">Log in</button>
+  </div>
+</div>
+

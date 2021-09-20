@@ -1,0 +1,45 @@
+@import '../../../styles/variables.scss';
+
+.content-carousel{
+  width: 620px;
+  height: 41rem !important;
+}
+.indicators {
+  display: none;
+}
+.carousel .indicators .indicator-item.active {
+  width: 26px !important;
+  height: 11px !important;
+  border-radius: 50px !important;
+  background-color: black;
+}
+
+.carousel-item{
+  justify-content: center;
+}
+h6{
+  color: $color-ligther;
+  opacity: 100%;
+  font-size: 22px;
+}
+
+.carousel-p{
+  max-width: 389px;
+  color: $color-ligther;
+  font-size: 12px !important;
+  text-align: center;
+  margin: auto;
+}
+
+ul{
+  bottom: -4%;
+}
+a.active{
+  padding: 10%;
+}
+
+@media (max-width: 992px){
+  .content-carousel{
+    height: 44rem !important;
+  }
+}

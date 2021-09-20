@@ -1,4 +1,13 @@
-@import '../src/app/styles/variables.scss';
+@import '../../../../styles/variables.scss';
+
+.forms{
+  width: 73%;
+  margin: 0 auto;
+}
+
+fieldset{
+  align-content: center;
+}
 
 h6{
   color: $color-secondary-darker;
@@ -8,6 +17,7 @@ h6{
   letter-spacing: 0px;
   text-align: center;
   margin-bottom: 10%;
+
 }
 
 label{
@@ -25,7 +35,6 @@ label:active{
 .navigation{
   position: absolute;
   bottom: 15%;
-  width: 70%;
 }
 
 .forgot-password{
@@ -41,7 +50,6 @@ label:active{
   color: #A9C5BA;
   opacity: 100%;
 }
-
 
 .sign-in{
   text-align-last: center;
